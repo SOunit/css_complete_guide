@@ -1,0 +1,19 @@
+/* body selector is good for global setting, using inheritence */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview {
+  background: rgb(221, 24, 57);
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+/* combinator */
+/* any h1 inside of product-overview */
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
