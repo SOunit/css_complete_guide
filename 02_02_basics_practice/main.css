@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  color: purple;
+  font-family: sans-serif;
+}
+
+code {
+  color: red;
+  font-family: monospace;
+}
+
+.line-two-code-color {
+  color: green;
+}
+
+li {
+  font-family: inherit;
+}
+
+li.target {
+  background-color: rgb(139, 139, 139);
+  color: blue;
+}
+
+ol li {
+  background-color: orange;
+  color: pink;
+}
