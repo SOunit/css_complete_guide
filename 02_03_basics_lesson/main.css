@@ -1,0 +1,49 @@
+body {
+  font-family: sans-serif;
+}
+
+#assignment-instructions {
+  font-family: sans-serif;
+  color: blue;
+}
+
+/* attribute selector */
+[id] {
+  color: green;
+}
+
+code {
+  font-family: monospace;
+  color: red;
+}
+
+.highlighted-code {
+  color: green;
+}
+
+/* all li but first one */
+/* li directry followed by li */
+li + li {
+  background-color: lightcoral;
+  color: blueviolet;
+}
+
+/* all li but first one */
+/*  */
+li ~ li {
+  background-color: lightcoral;
+  color: blueviolet;
+}
+
+/* all li but using combinator */
+/* li direct child of ol */
+ol > li {
+  background-color: lightcoral;
+  color: blueviolet;
+}
+
+/*  */
+ol li {
+  background-color: lightcoral;
+  color: blueviolet;
+}
