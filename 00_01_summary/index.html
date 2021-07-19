@@ -18,7 +18,7 @@
     </p>
     <article>
       <section>
-        <h2>No flex box</h2>
+        <h3>No flex box</h3>
         <p>nothing to say</p>
         <div class="container">
           <div class="item">item 1</div>
@@ -27,8 +27,9 @@
           <div class="item">item 4</div>
         </div>
       </section>
+      <h2>flex-container</h2>
       <section>
-        <h2>flex box (default)</h2>
+        <h3>flex box (default)</h3>
         <p>default is</p>
         <ol>
           <li>flex-direction: row;</li>
@@ -54,7 +55,7 @@
         </div>
       </section>
       <section>
-        <h2>flex box column</h2>
+        <h3>flex box column</h3>
         <ul>
           <li>flex-direction: column;</li>
           <li>flex-wrap: wrap;</li>
@@ -64,6 +65,95 @@
           <div class="item">item 2</div>
           <div class="item">item 3</div>
           <div class="item">item 4</div>
+        </div>
+      </section>
+      <h2>flex-item</h2>
+      <ol>
+        <li>order</li>
+        <li>align-self</li>
+        <li>flex-grow</li>
+        <li>flex-shrink</li>
+        <li>flex-basis</li>
+        <li>flex (flex-grow, flex-shrink, flex-basis)</li>
+      </ol>
+      <section>
+        <h3>order</h3>
+        <ol>
+          <li>order is -5 0 5.</li>
+          <li>follow main-axis.</li>
+          <li>deafult is 0.</li>
+        </ol>
+        <div class="container flex-box">
+          <div class="item order-item-1">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="item order-item-4">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h3>align-self</h3>
+        <ol>
+          <li>setting for cross-axis</li>
+        </ol>
+        <div class="container flex-box center">
+          <div class="item align-self-item-1">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="item align-self-item-4">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h3>flex-grow</h3>
+        <ol>
+          <li>calc space left, 1 + 3 = 4</li>
+          <li>separate space to 4, asign 1 to item3, asign 3 to item4</li>
+          <li>default is 0.</li>
+        </ol>
+        <div class="container flex-box center">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item flex-grow-item-3">item 3</div>
+          <div class="item flex-grow-item-4">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h3>flex-shrink</h3>
+        <ul>
+          <li>default is 1.</li>
+          <li>0 means no shrink.</li>
+        </ul>
+        <div class="container flex-box center">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item flex-shrink-item-3">item 3</div>
+          <div class="item flex-shrink-item-4">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h3>flex-basis</h3>
+        <ul>
+          <li>default is auto.</li>
+          <li>setting for main-axis.</li>
+          <li>high priority than height, width.</li>
+        </ul>
+        <div class="container flex-box center">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item flex-basis-item-3">item 3</div>
+          <div class="item flex-basis-item-4">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h3>flex</h3>
+        <ul>
+          <li>shortcut for flex-grow, flex-shrink, flex-basis</li>
+          <li>deafult is 0, 1, auto</li>
+        </ul>
+        <div class="container flex-box center">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item flex-item-3">item 3</div>
+          <div class="item flex-item-4">item 4</div>
         </div>
       </section>
     </article>
