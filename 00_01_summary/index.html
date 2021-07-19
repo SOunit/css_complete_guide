@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Summary of flexbox</h1>
+    <article>
+      <section>
+        <h2>No flex box</h2>
+        <p>nothing to say</p>
+        <div class="container">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="item">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h2>flex box (default)</h2>
+        <p>default is</p>
+        <ol>
+          <li>flex-direction: row;</li>
+          <li>flex-wrap: nowrap;</li>
+          <li>justify-content: flex-start;</li>
+          <li>align-items: stretch;</li>
+        </ol>
+        <p>important theory is</p>
+        <ol>
+          <li>main-axis (same with flex-direction)</li>
+          <li>cross-axis (opposite of main-axis)</li>
+        </ol>
+        <p>important properties is</p>
+        <ol>
+          <li>justify-content is for main-axis</li>
+          <li>align-items is for cross-axis</li>
+        </ol>
+        <div class="container flex-box">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="item">item 4</div>
+        </div>
+      </section>
+      <section>
+        <h2>flex box column</h2>
+        <ul>
+          <li>flex-direction: column;</li>
+          <li>flex-wrap: wrap;</li>
+        </ul>
+        <div class="container flex-box-column">
+          <div class="item">item 1</div>
+          <div class="item">item 2</div>
+          <div class="item">item 3</div>
+          <div class="item">item 4</div>
+        </div>
+      </section>
+    </article>
+  </body>
+</html>
