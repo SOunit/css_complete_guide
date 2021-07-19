@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+
+html {
+  background: #b3b3b3;
+  padding: 5px;
+}
+
+body {
+  background: #b3b3b3;
+  padding: 5px;
+  margin: 0;
+}
+
+/* 1. display: flex */
+/* gives block level behavior, and flex behavior! */
+/* 2. display: inline-flex */
+/* gives inline-level behavior, and flex behavior! */
+/* 3. flex behavior means align items in flex box way, left to right */
+/* 4. inline-level behavior means box doesn't shrink. */
+.flex-container {
+  background: white;
+  padding: 10px;
+  border: 5px solid black;
+  display: flex;
+  height: 700px;
+
+  /* automatic setting by display: flex */
+  /* main-axis */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item-1 {
+  background: #ff7300;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  /* basic order is 0 */
+  /* order is like -5  0  5 */
+  /* order: 5; */
+}
+
+.item-2 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 250px;
+  font-size: 1.8rem;
+}
+
+.item-3 {
+  background: #ff9640;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  height: 250px;
+}
+
+.item-4 {
+  background: #f5c096;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.item-5 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}
+
+.item-6 {
+  background: #d3c0b1;
+  color: white;
+  padding: 10px;
+  border: 5px solid black;
+  margin: 10px;
+  width: 350px;
+}
