@@ -29,3 +29,14 @@ body {
   color: white;
   font-family: 'Anton', sans-serif;
 }
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-header__list {
+  display: flex;
+  list-style: none;
+}
