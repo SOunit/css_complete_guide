@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  padding: 5px 10px 15px 20px;
+  border: 1px solid red;
+  margin: 5px 10px 15px 20px;
+  width: 49%;
+  margin: 0;
+  display: inline-block;
+}
+
+.box:first-child {
+  height: 300px;
+  display: none;
+}
+
+.box:last-of-type:hover {
+  background-color: red;
+  color: white;
+}
