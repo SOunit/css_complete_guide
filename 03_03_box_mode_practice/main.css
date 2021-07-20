@@ -39,3 +39,11 @@ body {
 .main-nav__item {
   display: inline-block;
 }
+
+.main-nav {
+  display: inline-block;
+}
+
+.main-logo {
+  display: inline-block;
+}
