@@ -1,6 +1,7 @@
 /* body selector is good for global setting, using inheritence */
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
 }
 
 #product-overview {
