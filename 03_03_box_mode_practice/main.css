@@ -1,0 +1,41 @@
+/* this selector is slow, body selector is prefarable most cases. */
+/* but * selector is good for setting box-sizing. */
+/* box-sizing in body becomes inheritance, which will be overwritten by browser default */
+* {
+  box-sizing: border-box;
+}
+
+/* body selector is good for global setting, using inheritence */
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+#product-overview {
+  background: rgb(221, 24, 57);
+  width: 100%;
+  height: 528px;
+  padding: 10px;
+  border: 5px solid orange;
+}
+
+.section-title {
+  color: #2ddf5c;
+}
+
+/* combinator */
+/* any h1 inside of product-overview */
+#product-overview h1 {
+  color: white;
+  font-family: 'Anton', sans-serif;
+}
+
+.main-header {
+  width: 100%;
+  background-color: #2ddf5c;
+  padding: 8px 16px;
+}
+
+.main-header__item {
+  display: inline-block;
+}
