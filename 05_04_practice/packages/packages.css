@@ -1,0 +1,39 @@
+.package-card {
+  border: 3px solid #0e4f1f;
+  padding: 16px;
+  background-color: #d5ffdc;
+  margin-top: 16px;
+  width: 70%;
+}
+
+.package-card:hover,
+.package-card:active {
+  border-color: red;
+}
+
+.package-card a {
+  text-decoration: none;
+}
+
+.package-card__title {
+  color: #343434;
+}
+
+.package-card__sub-title {
+  color: #777;
+}
+
+.package-card__description {
+  color: #0e4f1f;
+  border: 1px solid #0e4f1f;
+  background-color: white;
+  padding: 8px;
+}
+
+.package-card.highlight {
+  background-color: #0e4f1f;
+}
+
+.package-card.highlight .package-card__title {
+  color: white;
+}
