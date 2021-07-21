@@ -57,6 +57,10 @@ body {
   margin: 8px 0;
 }
 
+.reasons__title {
+  text-align: center;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
