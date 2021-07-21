@@ -48,6 +48,15 @@ body {
   padding: 8px;
 }
 
+.plan-detail__items {
+  list-style: none;
+  padding: 0;
+}
+
+.plan-detail__item {
+  margin: 8px 0;
+}
+
 /* h1 {
     font-family: sans-serif;
 } */
