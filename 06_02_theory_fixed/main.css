@@ -24,6 +24,11 @@
 /* 2. position context is original document flow position */
 /* 3. top, right, bottom, left prop can work */
 
+/* position sticky */
+/* mix of relative and fix */
+/* 1. stay with document flow like relative, then at the border, it stays, behaves like fixed */
+/* 2. positioning context is viewport */
+
 * {
   box-sizing: border-box;
 }
