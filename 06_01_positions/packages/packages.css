@@ -40,7 +40,12 @@ main {
   /* 2. some element in case an anscester has position property */
   position: absolute;
   top: 0;
-  left: 400px;
+  right: 0;
+  margin: 20px;
+  font-size: 12px;
+  color: #fff;
+  background-color: #ff5454;
+  padding: 8px;
 }
 
 .package__subtitle {
