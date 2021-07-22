@@ -28,6 +28,13 @@ body {
   text-decoration: none;
   font-weight: bold;
   font-size: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.main-header__brand img {
+  /* this means original height of image, thats important to understand */
+  height: 100%;
 }
 
 .main-nav {
