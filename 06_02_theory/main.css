@@ -33,20 +33,31 @@ body {
 }
 
 .parent .child-1 {
-  /* this applies only to NOT position: static */
-  /* top: 100%; */
-
   /* important position properties */
   /* 1. document flow */
   /* 2. positioning context */
-  /* 3. position is appliable to inline and block both */
+
+  /* position rules */
+  /* 1. default is position static */
+  /* 2. position is appliable to inline and block element both */
+  /* 3. top, right, bottom, left works only for position NOT static, default */
+  /* 4. z-index work only for position NOT static, default */
 
   /* position: fixed */
-  /* this gives 3 features */
   /* 1. out of document flow */
   /* 2. inline-block behavior */
   /* 3. positioning context is viewport ( = browser screen) */
-  /* default is position static */
+
+  /* position: absolute */
+  /* 1. out of document flow */
+  /* 2. position context is */
+  /* 2.1. html element in case no anscestor element has position prop, NOT default, static */
+  /* 2.2. the first anscestor element which has position prop, NOT default, static */
+
+  /* position: relative */
+  /* 1. stay inside of document flow */
+  /* 2. position context is document flow */
+
   position: fixed;
   top: 0;
   left: 0;
