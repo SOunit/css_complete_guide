@@ -7,6 +7,11 @@
     <title>Position</title>
   </head>
   <body>
+    <p class="message">
+      contact-us has z-index 100. image-2 has 1000. image-2 stay under
+      contact-us, because of stacking context. headline has z-index: 1, so it
+      goes under contact-us.
+    </p>
     <div class="navigation">navigation</div>
     <div class="headline">
       headline
