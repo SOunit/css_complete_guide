@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   background: #b3b3b3;
   padding: 15px;
@@ -26,4 +30,26 @@ body {
   padding: 10px;
   border: 5px solid black;
   margin: 10px;
+}
+
+.parent .child-1 {
+  /* this applies only to NOT position: static */
+  /* top: 100%; */
+
+  /* important position properties */
+  /* 1. document flow */
+  /* 2. positioning context */
+  /* 3. position is appliable to inline and block both */
+
+  /* position: fixed */
+  /* this gives 3 features */
+  /* 1. out of document flow */
+  /* 2. inline-block behavior */
+  /* 3. positioning context is viewport ( = browser screen) */
+  /* default is position static */
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
 }
