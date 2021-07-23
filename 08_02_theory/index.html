@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <section>
+      <h2>available units</h2>
+      <h3>absolute unit</h3>
+      <ol>
+        <li>px</li>
+      </ol>
+      <h3>viewport unit</h3>
+      <ol>
+        <li>vh</li>
+        <li>vw</li>
+        <li class="special">%</li>
+      </ol>
+      <h3>font size unit</h3>
+      <ol>
+        <li>rem</li>
+        <li>em</li>
+        <li class="special">%</li>
+      </ol>
+    </section>
+    <section>
+      <h2>3 rules to remember</h2>
+      <h3>1. position: fixed</h3>
+      <p>
+        % reference to
+        <span class="special"> viewport </span>
+      </p>
+      <h3>2. position: absolute</h3>
+      <p>
+        % reference to <span class="special"> content and padding</span> of
+        ancestor with position active ( not position static )
+      </p>
+      <h3>3. position: static / relative</h3>
+      <p>
+        % reference to ancestor <span class="special">content</span> with block
+        level.
+      </p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+}
+
+section {
+  background-color: rgba(207, 207, 207, 0.5);
+  padding: 12px;
+  margin: 24px auto;
+  border-radius: 18px;
+}
+
+h2 {
+  background-color: gray;
+  padding: 12px;
+  border-radius: 12px;
+  color: white;
+}
+
+h3 {
+  border-bottom: 3px solid white;
+}
+
+.special {
+  color: orange;
+  font-weight: bold;
+}
