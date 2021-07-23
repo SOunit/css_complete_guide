@@ -172,6 +172,7 @@
   /* for perfect circle */
   border-radius: 50%;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .key-feature__description {
