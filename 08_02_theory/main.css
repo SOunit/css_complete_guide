@@ -28,3 +28,29 @@ h3 {
   color: orange;
   font-weight: bold;
 }
+
+.usage-table thead {
+  font-weight: bold;
+  background-color: lightblue;
+}
+
+.usage-table tbody {
+  background-color: #fff;
+}
+
+.usage-table td {
+  /* border: 1px solid blue; */
+  padding: 0.5rem;
+}
+
+.rem-group {
+  border: 1px solid orange;
+}
+
+.percent-group {
+  border: 1px solid purple;
+}
+
+.px-group {
+  border: 1px solid #333;
+}
