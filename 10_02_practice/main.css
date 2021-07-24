@@ -97,9 +97,7 @@
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+  width: 100%;
 }
 
 .key-feature__image {
@@ -197,5 +195,12 @@
 
   .plan--highlighted {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    /* to make text on one line up */
+    vertical-align: top;
   }
 }
