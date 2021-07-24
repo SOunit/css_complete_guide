@@ -9,8 +9,8 @@ const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
 // js property notations
-console.log(modal.style.backgroundImage);
-console.log(modal.style['background-image']);
+console.log(backdrop.style.backgroundImage);
+console.log(backdrop.style['background-image']);
 
 // add event listener
 console.log(selectPlanButtons);
@@ -32,7 +32,9 @@ const closeModal = () => {
   // modal.style.display = 'none';
 
   backdrop.classList.remove('open');
-  modal.classList.remove('open');
+  if (modal) {
+    modal.classList.remove('open');
+  }
 };
 
 backdrop.addEventListener('click', () => {
@@ -41,7 +43,9 @@ backdrop.addEventListener('click', () => {
   closeModal();
 });
 
-modalNoButton.addEventListener('click', closeModal);
+if (modalNoButton) {
+  modalNoButton.addEventListener('click', closeModal);
+}
 
 toggleButton.addEventListener('click', () => {
   // mobileNav.style.display = 'block';
