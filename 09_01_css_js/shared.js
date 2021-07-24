@@ -8,29 +8,44 @@ const selectPlanButtons = document.querySelectorAll('.plan button');
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 
+// js property notations
+console.log(modal.style.backgroundImage);
+console.log(modal.style['background-image']);
+
 // add event listener
 console.log(selectPlanButtons);
 for (let i = 0; i < selectPlanButtons.length; i++) {
   selectPlanButtons[i].addEventListener('click', () => {
     // style prop holds only inline prop of element
-    backdrop.style.display = 'block';
-    modal.style.display = 'block';
+    // backdrop.style.display = 'block';
+    // modal.style.display = 'block';
+    // this overwrite complete class list
+    // modal.className = 'open';
+
+    modal.classList.add('open');
+    backdrop.classList.add('open');
   });
 }
 
 const closeModal = () => {
-  backdrop.style.display = 'none';
-  modal.style.display = 'none';
+  // backdrop.style.display = 'none';
+  // modal.style.display = 'none';
+
+  backdrop.classList.remove('open');
+  modal.classList.remove('open');
 };
 
 backdrop.addEventListener('click', () => {
-  mobileNav.style.display = 'none';
+  // mobileNav.style.display = 'none';
+  mobileNav.classList.remove('open');
   closeModal();
 });
 
 modalNoButton.addEventListener('click', closeModal);
 
 toggleButton.addEventListener('click', () => {
-  mobileNav.style.display = 'block';
-  backdrop.style.display = 'block';
+  // mobileNav.style.display = 'block';
+  // backdrop.style.display = 'block';
+  mobileNav.classList.add('open');
+  backdrop.classList.add('open');
 });
