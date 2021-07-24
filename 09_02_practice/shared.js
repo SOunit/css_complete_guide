@@ -3,6 +3,9 @@ console.log('hello from js!');
 // get access
 const backdrop = document.querySelector('.backdrop');
 const modal = document.querySelector('.modal');
+const noButton = document.querySelector(
+  '.modal__action.modal__action--negative'
+);
 
 // add event listener
 const selectPlanButtons = document.querySelectorAll('.plan button');
@@ -14,3 +17,8 @@ for (let i = 0; i < selectPlanButtons.length; i++) {
     modal.style.display = 'block';
   });
 }
+
+noButton.addEventListener('click', () => {
+  backdrop.style.display = 'none';
+  modal.style.display = 'none';
+});
