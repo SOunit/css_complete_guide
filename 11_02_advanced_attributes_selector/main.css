@@ -1,0 +1,72 @@
+h1 {
+  text-align: center;
+}
+
+label,
+input {
+  display: block;
+}
+
+.sections {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.sections li {
+  width: 45%;
+  margin: 1rem;
+}
+
+section {
+  background-color: #eee;
+  border-radius: 12px;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/* any element with type attribute */
+[type] {
+  color: red;
+  border: 1px solid red;
+}
+
+/* value search */
+[type='password'] {
+  color: blue;
+  border: 1px solid blue;
+}
+
+/* value includes search */
+[lang~='en-us'] {
+  color: green;
+  border: 1px solid green;
+}
+
+/* value / value - */
+#four [lang|='en'] {
+  color: orange;
+  border: 1px solid orange;
+}
+
+/* prefix selector */
+[href^='#'] {
+  color: purple;
+  border: 1px solid purple;
+}
+
+/* suffix selector */
+[href$='.de'] {
+  color: royalblue;
+  border: 1px solid royalblue;
+}
+
+/* keyword selector */
+[src*='cdn'] {
+  color: palevioletred;
+  border: 1px solid palevioletred;
+}
+
+.eight [src*='cdn' i] {
+  color: darkcyan;
+  border: 1px solid darkcyan;
+}

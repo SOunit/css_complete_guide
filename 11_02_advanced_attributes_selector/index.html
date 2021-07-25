@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Attribute Selectors</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Advanced Attribute Selectors</h1>
+    <ol class="sections">
+      <li>
+        <section id="one">
+          <h2>[type]{}</h2>
+          <label for="">Type selector</label>
+          <input type="text" />
+        </section>
+      </li>
+      <li>
+        <section id="two">
+          <h2>[type='password']{}</h2>
+          <label for="">Type with specific value selector</label>
+          <input type="password" />
+        </section>
+      </li>
+      <li>
+        <section id="three">
+          <h2>[lang~='en-us']{}</h2>
+          <label for="">Type including some value selector</label>
+          <p lang="en-us en-gb">test</p>
+        </section>
+      </li>
+      <li>
+        <section id="four">
+          <h2>[lang|='en']{}</h2>
+          <label for="">Type with some value / velue - selector</label>
+          <p lang="en-us en-gb">test</p>
+        </section>
+      </li>
+      <li>
+        <section>
+          <h2>[href^='#']{}</h2>
+          <label for="">prefix selector</label>
+          <a href="#all">test</a>
+        </section>
+      </li>
+      <li>
+        <section>
+          <h2>[href$='.de']{}</h2>
+          <label for="">sufix selector</label>
+          <a href="abc.de">test</a>
+        </section>
+      </li>
+      <li>
+        <section>
+          <h2>[src*='cdn']{}</h2>
+          <label for="">keyword selector</label>
+          <img src="i.cdn.com" />
+        </section>
+      </li>
+      <li>
+        <section class="eight">
+          <h2>[src*='cdn' i]{}</h2>
+          <label for="">keyword selector case insensitive</label>
+          <img src="i.CDN.com" />
+        </section>
+      </li>
+    </ol>
+  </body>
+</html>
