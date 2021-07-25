@@ -11,7 +11,7 @@
   /* background-image: radial-gradient(ellipse farthest-corner at 20% 50%, red, blue 70%, green); */
   width: 100vw;
   height: 33vh;
-  margin-top: 2.75rem;
+  margin-top: 3.5rem;
   /* border: 5px dashed red; */
   position: relative;
 }
@@ -166,7 +166,7 @@
   border-color: #ff5454;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 40rem) {
   #product-overview {
     background-position: 50% 25%;
     height: 40vh;
@@ -175,7 +175,9 @@
   #product-overview h1 {
     font-size: 3rem;
   }
+}
 
+@media (min-width: 40rem) {
   .plan__list {
     width: 100%;
     text-align: center;
