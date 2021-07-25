@@ -95,3 +95,25 @@ main {
 #premium .package__subtitle {
   color: #bbb;
 }
+
+@media (min-width: 40rem) {
+  main {
+    margin: 3rem auto;
+    max-width: 95rem;
+  }
+}
+
+@media (min-width: 95rem) {
+  .package {
+    border-left: 4px solid #0e4f1f;
+  }
+
+  #free {
+    border-right: 4px solid #0e4f1f;
+  }
+
+  #free:hover,
+  #free:active {
+    border-right-color: #ff5454;
+  }
+}
