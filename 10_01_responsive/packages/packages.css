@@ -98,8 +98,9 @@ main {
 
 @media (min-width: 40rem) {
   main {
-    margin: 3rem auto;
     max-width: 95rem;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
