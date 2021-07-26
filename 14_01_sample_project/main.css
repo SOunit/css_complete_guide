@@ -1,12 +1,13 @@
 .container {
   margin: 20px;
   display: grid;
-  height: 500px;
+  height: 800px;
+  width: 800px;
   /* grid-template-columns: 200px 5rem 20% auto; */
-  grid-template-columns: [hd-start] repeat(4, [col-start] 25% [col-end]) [hd-end];
+  grid-template-columns: [hd-start] repeat(4, [col-start] 20% [col-end]) [hd-end];
   /* grid-template-rows: 5rem auto; */
   grid-template-rows:
-    [hd-start] 5rem [hd-end row-2-start]minmax(10px, auto)
+    [hd-start] 5rem [hd-end row-2-start]minmax(10px, 20rem)
     [row-2-end row-3-start]100px;
   grid-column-gap: 20px;
   grid-row-gap: 10px;
@@ -16,13 +17,21 @@
     'header header header header'
     '. . main main'
     'footer footer footer footer';
+
+  /* for positionning grid element */
+  /* default is justify-items: stretch */
   justify-items: center;
   justify-items: start;
   justify-items: end;
-  /* default is justify-items: stretch */
   justify-items: stretch;
   align-items: start;
   align-items: end;
+  align-items: stretch;
+
+  /* for positioning grid itself */
+  justify-content: center;
+  justify-content: start;
+  justify-content: end;
 }
 
 .el1 {
