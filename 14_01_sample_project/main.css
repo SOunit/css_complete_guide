@@ -16,6 +16,13 @@
     'header header header header'
     '. . main main'
     'footer footer footer footer';
+  justify-items: center;
+  justify-items: start;
+  justify-items: end;
+  /* default is justify-items: stretch */
+  justify-items: stretch;
+  align-items: start;
+  align-items: end;
 }
 
 .el1 {
