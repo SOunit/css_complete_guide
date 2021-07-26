@@ -20,7 +20,7 @@ body {
   padding-top: 3.5rem;
 
   /* or making grid layout which has header */
-  grid-template-rows: 3.5rem auto 8rem;
+  grid-template-rows: 3.5rem auto fit-content(8rem);
   padding-top: inherit;
 
   grid-template-areas:
@@ -32,8 +32,6 @@ body {
 }
 
 main {
-  /* min-height: calc(100vh - 3.5rem - 8rem); */
-  margin-top: 3.5rem;
   /* grid-row: 2 / 3; */
   grid-area: main;
 }
