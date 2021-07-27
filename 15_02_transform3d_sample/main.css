@@ -20,6 +20,9 @@
   color: white;
   text-align: center;
   z-index: 1;
+  /* backface-visibility: visible; is default */
+  backface-visibility: hidden;
+  backface-visibility: visible;
 }
 
 .box2 {
