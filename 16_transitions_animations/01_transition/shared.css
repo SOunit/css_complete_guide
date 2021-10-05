@@ -129,7 +129,8 @@ main {
 .main-nav__item--cta {
   /* animation: NAME    DURATION  DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE; */
   /* animation: wiggle  200ms     1s    ease-out        8         alternate forwards  running; */
-  animation: wiggle 150ms 1s 9 alternate forwards;
+  animation: wiggle 400ms 1s 9 alternate forwards;
+  animation: wiggle 400ms 1s 8 ease-out none;
 }
 
 .main-nav__item--cta a:hover,
@@ -259,11 +260,23 @@ main {
   }
 }
 
-@keyframes wiggle {
+/* @keyframes wiggle {
   from {
     transform: rotateZ(0);
   }
   to {
+    transform: rotateZ(10deg);
+  }
+} */
+
+@keyframes wiggle {
+  0% {
+    transform: rotateZ(0);
+  }
+  50% {
+    transform: rotateZ(-10deg);
+  }
+  100% {
     transform: rotateZ(10deg);
   }
 }
