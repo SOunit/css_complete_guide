@@ -126,6 +126,12 @@ main {
   border-radius: 8px;
 }
 
+.main-nav__item--cta {
+  /* animation: NAME    DURATION  DELAY TIMING-FUNCTION ITERATION DIRECTION FILL-MODE PLAY-STATE; */
+  /* animation: wiggle  200ms     1s    ease-out        8         alternate forwards  running; */
+  animation: wiggle 150ms 1s 9 alternate forwards;
+}
+
 .main-nav__item--cta a:hover,
 .main-nav__item--cta a:active,
 .mobile-nav__item--cta a:hover,
@@ -250,5 +256,14 @@ main {
   .main-footer__links {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@keyframes wiggle {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(10deg);
   }
 }
